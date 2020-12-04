@@ -1,0 +1,194 @@
+@keyframes onLoad {
+  0% {
+    transform: scale(1.1);
+    opacity: 0; } }
+#page.accounts {
+  overflow: hidden; }
+
+#page.accounts > header {
+  width: 100%;
+  height: 68px;
+  position: absolute;
+  top: 0;
+  left: 0;
+  padding: 0 4%;
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+  align-content: center;
+  background: linear-gradient(to bottom, rgba(0, 0, 0, 0.7) 10%, transparent);
+  z-index: 1; }
+
+#page.accounts > header > a {
+  width: auto;
+  height: 25px;
+  position: relative;
+  float: left; }
+
+#page.accounts > header > a > img {
+  width: auto;
+  height: 100%;
+  position: relative;
+  float: left;
+  object-fit: fill; }
+
+#page.accounts > .content {
+  width: 100%;
+  height: 100%;
+  position: relative;
+  float: left;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  align-content: center;
+  flex-wrap: wrap; }
+
+#page.accounts > .content > .container {
+  width: auto;
+  max-width: 80%;
+  height: auto;
+  position: relative;
+  float: left;
+  animation: onLoad forwards ease 0.45s; }
+
+#page.accounts > .content > .container > .title {
+  width: 100%;
+  height: auto;
+  position: relative;
+  float: left;
+  font-size: 3.5vw;
+  color: #FFF;
+  line-height: 1.2;
+  text-align: center; }
+
+#page.accounts > .content > .container > nav.users {
+  width: 100%;
+  height: auto;
+  position: relative;
+  float: left; }
+
+#page.accounts > .content > .container > nav.users > ul {
+  width: 100%;
+  height: auto;
+  position: relative;
+  float: left;
+  margin: 2em 0;
+  font-size: 0.85vw;
+  display: flex;
+  justify-content: center; }
+
+#page.accounts > .content > .container > nav.users > ul > li {
+  width: 10vw;
+  max-width: 200px;
+  min-width: 84px;
+  height: auto;
+  position: relative;
+  float: left;
+  list-style: none;
+  margin: 0 2vw 0 0; }
+
+#page.accounts > .content > .container > nav.users > ul > li > a {
+  width: 100%;
+  height: auto;
+  position: relative;
+  float: left; }
+  #page.accounts > .content > .container > nav.users > ul > li > a:hover > .image::before {
+    border-color: #E5E5E5; }
+  #page.accounts > .content > .container > nav.users > ul > li > a:hover > .name {
+    color: #FFF; }
+
+#page.accounts > .content > .container > nav.users > ul > li > a > .image {
+  width: 10vw;
+  max-width: 200px;
+  min-width: 84px;
+  height: 10vw;
+  max-height: 200px;
+  min-height: 84px;
+  position: relative;
+  float: left;
+  font-size: 0.85vw;
+  border-radius: 4px; }
+  #page.accounts > .content > .container > nav.users > ul > li > a > .image::before {
+    content: "";
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    top: 0;
+    left: 0;
+    font-size: 0.85vw;
+    border: solid 0.3em transparent;
+    box-sizing: border-box;
+    border-radius: 4px; }
+
+#page.accounts > .content > .container > nav.users > ul > li > a > .image > .edit {
+  width: 100%;
+  height: 100%;
+  position: relative;
+  float: left;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  align-content: center;
+  border-radius: 4px;
+  font-size: 0.85vw;
+  background-color: rgba(20, 20, 20, 0.5); }
+
+#page.accounts > .content > .container > nav.users > ul > li > a > .image > .edit > svg {
+  width: 3rem;
+  height: 3rem;
+  max-width: 70px;
+  max-height: 70px;
+  color: #FFF; }
+
+#page.accounts > .content > .container > nav.users > ul > li > a > .name {
+  width: 100%;
+  height: auto;
+  min-height: 1.8em;
+  position: relative;
+  float: left;
+  font-size: 1.3vw;
+  line-height: 1.2em;
+  margin: 0.6em 0;
+  color: grey;
+  text-align: center;
+  word-break: normal; }
+
+#page.accounts > .content > .container > nav.admin {
+  width: 100%;
+  height: auto;
+  position: relative;
+  float: left;
+  font-size: 1.3vw;
+  margin: 1em 0 1em 0;
+  display: flex;
+  align-items: center;
+  align-content: center;
+  justify-content: center; }
+
+#page.accounts > .content > .container > nav.admin > a {
+  width: auto;
+  height: auto;
+  position: relative;
+  float: left;
+  border: solid 1px grey;
+  padding: 0.5em 1.5em;
+  text-transform: uppercase;
+  color: grey;
+  font-size: 0.9em;
+  line-height: 1;
+  letter-spacing: 2px;
+  text-decoration: none; }
+  #page.accounts > .content > .container > nav.admin > a:hover {
+    border-color: #FFF;
+    color: #FFF; }
+  #page.accounts > .content > .container > nav.admin > a.primary {
+    border-color: #FFF;
+    background-color: #FFF;
+    color: #000;
+    font-weight: 700; }
+    #page.accounts > .content > .container > nav.admin > a.primary:hover {
+      background-color: #C00;
+      border-color: #C00;
+      color: #FFF; }
+
+/*# sourceMappingURL=Accounts.css.map */

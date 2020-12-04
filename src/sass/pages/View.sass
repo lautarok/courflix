@@ -1,0 +1,173 @@
+@import '../animations.sass'
+
+#page.view
+    display: flex
+    justify-content: center
+    align-items: center
+    align-content: center
+    animation: onLoad forwards ease .45s
+
+#page.view > header
+    width: 100%
+    height: 68px
+    position: absolute
+    top: 0
+    left: 0
+    padding: 0 4%
+    display: flex
+    justify-content: space-between
+    align-items: center
+    align-content: center
+    background: linear-gradient(to bottom, rgba(0, 0, 0, .7) 10%, transparent)
+    z-index: 1
+
+#page.view > header > a
+    width: auto
+    height: 25px
+    position: relative
+    float: left
+
+#page.view > header > a > img
+    width: auto
+    height: 100%
+    position: relative
+    float: left
+    object-fit: fill
+
+#page.view > header > nav
+    width: auto
+    height: 100%
+    position: relative
+    float: left
+
+#page.view > header > nav > ul
+    width: auto
+    height: 100%
+    position: relative
+    float: left
+
+#page.view > header > nav > ul > li
+    width: auto
+    height: 100%
+    position: relative
+    float: left
+    list-style: none
+    display: flex
+    align-items: center
+    align-content: center
+    justify-content: flex-start
+
+#page.view > header > nav > ul > li > a
+    width: auto
+    height: auto
+    position: relative
+    float: left
+    font-size: 1.2rem
+    line-height: 1
+    display: flex
+    align-items: center
+    align-content: center
+    justify-content: flex-start
+    color: #FFF
+    text-decoration: none
+    margin-right: 15px
+    font-size: 1.2rem
+    padding: .8em 1.5em
+    text-transform: uppercase
+    border: solid 1px transparent
+    &.primary
+        background-color: #FFF
+        color: #000
+        border-color: #FFF
+        margin-right: 0
+        font-weight: 700
+        letter-spacing: 2px
+        &:hover
+            background-color: #C00
+            color: #FFF
+            border-color: #C00
+    &:hover
+        border-color: #FFF
+
+#page.view > .content
+    width: 100%
+    height: 100%
+    position: relative
+    float: left
+    background: linear-gradient(90deg, rgba(0, 0, 0, .9) 33.3%, rgba(0, 0, 0, .30))
+    display: flex
+    justify-content: flex-start
+    align-items: center
+    padding: 0 4%
+
+#page.view > .content > .text
+    width: auto
+    max-width: 50%
+    height: auto
+    position: relative
+    float: left
+
+#page.view > .content > .text > .title
+    width: 75%
+    height: auto
+    position: relative
+    float: left
+    font-size: 4rem
+    line-height: 1.2
+    color: rgba(255, 255, 255, .9)
+    font-weight: 400
+    margin: 0 0 2rem 0
+    & > span > span
+        font-weight: 700
+        color: #FFF
+
+#page.view > .content > .text > .description
+    width: 75%
+    height: auto
+    position: relative
+    float: left
+    font-size: 1.4rem
+    line-height: 1.2
+    color: #FFF
+    margin: 0 0 2rem 0
+
+#page.view > .content > .text > nav
+    width: 100%
+    height: auto
+    position: relative
+    float: left
+
+#page.view > .content > .text > nav > ul
+    width: 100%
+    height: auto
+    position: relative
+    float: left
+
+#page.view > .content > .text > nav > ul > li
+    width: auto
+    height: auto
+    position: relative
+    float: left
+    list-style: none
+
+#page.view > .content > .text > nav > ul > li > a
+    width: auto
+    height: auto
+    position: relative
+    float: left
+    font-size: 1.2rem
+    margin: 0 .8em
+    padding: .8em 0
+    color: #FFF
+    text-transform: uppercase
+    text-decoration: none
+    &.primary
+        margin-left: 0
+        padding: .8em 1.5em
+        background-color: #FFF
+        color: #000
+        font-weight: 700
+        letter-spacing: 2px
+        &:hover
+            background-color: #C00
+            color: #FFF

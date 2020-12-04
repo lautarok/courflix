@@ -1,0 +1,222 @@
+@import '../animations.sass'
+
+#page.edit
+    display: flex
+    justify-content: center
+    align-items: center
+    overflow: hidden
+
+#page.edit > header
+    width: 100%
+    height: 68px
+    position: absolute
+    top: 0
+    left: 0
+    padding: 0 4%
+    display: flex
+    justify-content: flex-start
+    align-items: center
+    align-content: center
+    background: linear-gradient(to bottom, rgba(0, 0, 0, .7) 10%, transparent)
+    z-index: 1
+
+#page.edit > header > a
+    width: auto
+    height: 25px
+    position: relative
+    float: left
+
+#page.edit > header > a > img
+    width: auto
+    height: 100%
+    position: relative
+    float: left
+    object-fit: fill
+
+#page.edit > .content
+    width: 100vh
+    max-width: 80%
+    height: auto
+    position: relative
+    float: left
+    display: flex
+    justify-content: flex-start
+    align-items: flex-start
+    align-content: flex-start
+    flex-flow: column
+    animation: onLoad forwards ease .45s
+
+#page.edit > .content > .title
+    width: 100%
+    height: auto
+    position: relative
+    float: left
+    font-size: 4vw
+    color: #FFF
+    line-height: 1
+    padding: 0 0 .6vw
+    border-bottom: solid 1px #333
+
+#page.edit > .content > .profile
+    width: 100%
+    height: auto
+    position: relative
+    float: left
+    font-size: .75vw
+    padding: 2em 0
+
+#page.edit > .content > .profile > .user
+    width: 100%
+    height: auto
+    position: relative
+    float: left
+
+#page.edit > .content > .profile > .user > .avatar
+    width: 8vw
+    max-width: 180px
+    min-width: 80px
+    height: 8vw
+    max-height: 180px
+    min-height: 80px
+    position: relative
+    float: left
+    margin-right: 1.5vw
+
+#page.edit > .content > .profile > .user > .avatar > img
+    width: 100%
+    height: 100%
+    position: relative
+    float: left
+    border-radius: 4px
+
+#page.edit > .content > .profile > .user > .basic
+    width: calc(100% - 9.5vw)
+    min-width: calc(100% - 180px - 1.5vw)
+    max-width: calc(100% - 80px - 1.5vw)
+    height: 8vw
+    max-height: 180px
+    min-height: 80px
+    position: relative
+    float: left
+    border-bottom: solid 1px #333
+    display: flex
+    align-items: center
+    align-content: center
+    justify-content: flex-start
+
+#page.edit > .content > .profile > .user > .basic > input[type='text']
+    width: 18em
+    height: 2em
+    position: relative
+    float: left
+    background-color: rgba(255, 255, 255, .2)
+    font-size: 1.3vw
+    line-height: 1
+    padding: .2em .6em
+    display: flex
+    align-items: center
+    align-content: center
+    justify-content: flex-start
+    color: #FFF
+
+#page.edit > .content > .avatars
+    width: 100%
+    height: auto
+    position: relative
+    float: left
+    font-size: 1.3vw
+    padding: 0 0 2em 0
+
+#page.edit > .content > .avatars > .title
+    width: 100%
+    height: auto
+    position: relative
+    float: left
+    font-size: 2rem
+    line-height: 1
+    color: #FFF
+    margin-bottom: 1rem
+
+#page.edit > .content > .avatars > ul
+    width: 100%
+    height: auto
+    position: relative
+    float: left
+    display: grid
+    grid-auto-rows: auto
+    grid-template-columns: repeat(5, 1fr)
+    grid-gap: 25px
+
+#page.edit > .content > .avatars > ul > li
+    width: 100%
+    height: auto
+    position: relative
+    float: left
+    list-style: none
+    display: inline
+
+#page.edit > .content > .avatars > ul > li > button
+    width: 100%
+    height: auto
+    position: relative
+    float: left
+    display: flex
+    justify-content: center
+    align-items: center
+
+#page.edit > .content > .avatars > ul > li > button > img
+    width: 100%
+    height: auto
+    position: relative
+    float: left
+    border-radius: 4px
+    &:hover
+        filter: brightness(80%)
+
+#page.edit > .content > .avatars > ul > li > button > .selected
+    width: 100%
+    height: 100%
+    position: absolute
+    top: 0
+    left: 0
+    display: flex
+    justify-content: center
+    align-items: center
+    background-color: rgba(10, 10, 10, .55)
+    border-radius: 4px
+    color: #FFF
+
+#page.edit > .content > .actions
+    width: 100%
+    height: auto
+    position: relative
+    float: left
+    padding: 2em 0 0 0
+    font-size: 1.3vw
+    border-top: solid 1px #333
+
+#page.edit > .content > .actions > button, #page.edit > .content > .actions > a
+    width: auto
+    height: auto
+    position: relative
+    float: left
+    text-transform: uppercase
+    font-size: 1.3vw
+    border: solid 1px grey
+    padding: .3em 1em
+    margin-right: 1em
+    color: grey
+    letter-spacing: 2px
+    text-decoration: none
+    &:hover
+        border-color: #FFF
+        color: #FFF
+    &.primary
+        background-color: #FFF
+        border-color: #FFF
+        color: #000
+        font-weight: 700
+        &:hover
+            background-color: #C00
+            border-color: #C00
+            color: #FFF
