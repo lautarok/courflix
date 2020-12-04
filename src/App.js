@@ -10,12 +10,10 @@ import Edit from './pages/Edit';
 import View from './pages/View';
 
 function App() {
-    let [_accounts, _setAccounts] = useState(null),
-        [_currentAccount, _setCurrentAccount] = useState(null);
+    let [_accounts, _setAccounts] = useState(null);
     
     useEffect(function() {
         if(window.localStorage.getItem('accounts')) {
-            _setCurrentAccount(window.sessionStorage.getItem('currentAccount'));
             _setAccounts(JSON.parse(window.localStorage.getItem('accounts')));
         }
         else {
@@ -38,9 +36,7 @@ function App() {
                 }
             ];
             _setAccounts(defaultAccounts);
-            _setCurrentAccount(false);
             window.localStorage.setItem('accounts', JSON.stringify(defaultAccounts));
-            window.sessionStorage.setItem('currentAccount', false);
         }
     }, []);
     
